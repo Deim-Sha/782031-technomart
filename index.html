@@ -6,25 +6,23 @@
   </head>
   <body>
     <header class="main-header">
-      <!-- тут логотип в ссылке должен быть -->
+      <a class="main-header-logo">Техномарт</a>
       <ul class="shopping-navigation">
         <li>Поиск:</li> <!-- ToDo: Добавить форму -->
         <li><a href="bookmarks.html">Закладки:<span>0</span></a></li>
         <li><a href="cart.html">Корзина:<span>0</span></a></li>
         <li><a href="order.html">Оформить заказ</a></li>
       </ul>
-      <!-- начало общего какого-то блока -->
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <a href="tel-to.html">+7 (812) 555-05-55</a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <ul class="user-navigation-unauthorized">
-        <li><a href="login.html">Войти</a></li>
-        <li><a href="registration.html">Регистрация</a></li>
-      </ul>
-      <!-- конец общего родителя -->
+      <div class="header-contacts-login">
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <a href="tel-to.html">+7 (812) 555-05-55</a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <ul class="user-navigation-unauthorized">
+          <li><a href="login.html">Войти</a></li>
+          <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+      </div>
       <nav class="main-navigation">
-        <!-- почему логотип тут? он же по макету вверху самому http://skrinshoter.ru/s/100618/YfSAAHwX -->
-        <a class="main-header-logo">Техномарт</a>
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="info.html">Компания</a></li>
@@ -40,7 +38,6 @@
     <main class="container">
       <section class="offers">
         <h2 class="visually-hidden">Предложения магазина</h2>
-        <!-- первый блок список из 3ех элементов -->
         <ul class="offers-list">
           <li class="offers-item">
             <h3>Материалы</h3>
@@ -54,35 +51,30 @@
             <h3>Техника</h3>
             <a class="button offer-button" href="equipment.html">Для стройки</a>
           </li>
-        </ul>  
-        <!-- конец блока из 3ех элемнтов -->
-        <!-- второй блок, тут должен лежать слайдер и отдельно еще один контейнер, где будет скидки и доставка -->  
-          <section.offers2>
-            div.slider
-              <ul class="offers-slider">
-                <li class="offers-slider-item">
-                  <h3>Дрели</h3>
-                  <p>Соседям на радость!</p>
-                  <a class="button" href="catalog.html">Открыть каталог</a>
-                  <p>
-                    <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                    <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
-                  </p>
-                </li>
-                <li class="offers-slider-item">
-                  <h3>Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
-                  <a class="button" href="catalog.html">Открыть каталог</a>
-                  <p>
-                    <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                    <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
-                  </p>
-                </li>
-              </ul>
-            </div.slider2>
-          </section.offer2>
-          ul.offers-list2
-             <li class="offers-item">
+        </ul>
+        <div class="slider-and-offers2">
+          <ul class="offers-slider">
+            <li class="offers-slider-item">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+              <p>
+                <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
+                <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+              </p>
+            </li>
+            <li class="offers-slider-item">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+              <p>
+                <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
+                <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+              </p>
+            </li>
+          </ul>
+          <ul class="offers-list2">
+            <li class="offers-item">
               <h3>Скидки 50%</h3>
               <a class="button offer-button" href="special-offers.html">На 350 товаров</a>
             </li>
@@ -90,69 +82,75 @@
               <h3>Доставка</h3>
               <a class="button offer-button" href="delivery.html">Бесплатно</a>
             </li>
-          </ul> 
+          </ul>
+        </div>
       </section>
 
       <section class="popular-goods">
-        <!-- Общий родитель -->
-        <h2>Популярные товары:</h2>
-        <a class="button" href="popular-goods.html">Все популярные товары</a>
-        <!-- конец общего родителя -->
-        
+        <div class="popular-goods-header">
+          <h2>Популярные товары:</h2>
+          <a class="button" href="popular-goods.html">Все популярные товары</a>
+        </div>
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <h3>Перфоратор BOSCH<br>
             BFG 9000</h3>
-            <!-- давай для Img обвертку типа div.image-wrapper-->
-            <img src="http://placehold.it/184x164" alt="Перфоратор BOSCH BFG 9000">
+            <div class="img-wrapper">
+              <img src="http://placehold.it/184x164" alt="Перфоратор BOSCH BFG 9000">
+            </div>
             <p class="price-old">32500 Р.</p>
             <p class="price-new">25500 Р.</p>
             <ul class="add-item-to">
-              <!-- купить и закладки - ссылки -->
-              <li class="button add-to-cart">Купить</li>
-              <li class="button add-to-bookmarks">В закладки</li>
+              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
+              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
             </ul>
           </li>
           <li class="popular-goods-item">
             <h3>Перфоратор BOSCH<br>
             BFG 3000</h3>
-            <img src="http://placehold.it/127x112" alt="Перфоратор BOSCH BFG 3000">
+            <div class="img-wrapper">
+              <img src="http://placehold.it/127x112" alt="Перфоратор BOSCH BFG 3000">
+            </div>
             <p class="price-old">22500 Р.</p>
             <p class="price-new">15500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart">Купить</li>
-              <li class="button add-to-bookmarks">В закладки</li>
+              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
+              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
             </ul>
           </li>
           <li class="popular-goods-item">
             <h3>Перфоратор BOSCH<br>
             BFG 6000</h3>
-            <img src="http://placehold.it/144x128" alt="Перфоратор BOSCH BFG 6000">
+            <div class="img-wrapper">
+              <img src="http://placehold.it/144x128" alt="Перфоратор BOSCH BFG 6000">
+            </div>
             <p class="price-old">30500 Р.</p>
             <p class="price-new">25500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart">Купить</li>
-              <li class="button add-to-bookmarks">В закладки</li>
+              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
+              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
             </ul>
           </li>
           <li class="popular-goods-item">
             <h3>Перфоратор BOSCH<br>
             BFG 2000</h3>
-            <img src="http://placehold.it/127x112" alt="Перфоратор BOSCH BFG 2000">
+            <div class="img-wrapper">
+              <img src="http://placehold.it/127x112" alt="Перфоратор BOSCH BFG 2000">
+            </div>
             <p class="price-new">12500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart">Купить</li>
-              <li class="button add-to-bookmarks">В закладки</li>
+              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
+              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
             </ul>
           </li>
         </ul>
       </section>
 
       <section class="popular-companies">
-        <!-- Общий родитель -->
-        <h2>Популярные производители:</h2>
-        <a class="button" href="companies.html">Все производители</a>
-        <!-- конец общего родителя -->
+        <div class="popular-companies-header">
+          <h2>Популярные производители:</h2>
+          <a class="button" href="companies.html">Все производители</a>
+        </div>
         <ul class="popular-companies-list">
           <li class="popular-companies-item">
             <a href="companies.html#bosch">
@@ -220,31 +218,31 @@
           </li>
         </ul>
       </section>
-      
-      <!-- info И contacts Должны иметь общий контейнер -->
-      <article class="info"> <!-- Не article -->
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="delivery-companies">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="info.html">Подробнее о компании</a>
-      </article>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="map.html">
-          <img src="http://placehold.it/300x158">
-        </a>
-        <p>
-          <span class="button">Заблудились? Напишите нам!</span><!-- ToDo: Сделать кнопку -->
-        </p>
-      </section>
+      <div class="info-contacts">
+        <section class="info">
+          <h2>Компания «Техномарт»</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="delivery-companies">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="info.html">Подробнее о компании</a>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a href="map.html">
+            <img src="http://placehold.it/300x158" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </a>
+          <p>
+            <span class="button">Заблудились? Напишите нам!</span><!-- ToDo: Сделать кнопку -->
+          </p>
+        </section>
+      </div>
 
       <section class="modal modal-write-us">
         <h2 class="visually-hidden">Обратная связь</h2>
@@ -271,32 +269,33 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <!-- Общий родитель -->
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+
+      <div class="footer-contacts-offers">
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
-      <ul class="footer-offers">
-        <li><a href="materials.html">Материалы</a></li>
-        <li><a href="equipment.html">Техника</a></li>
-        <li><a href="tools.html">Инструмент</a></li>
-        <li><a href="special-offers.html">Спецпредложения</a></li>
-      </ul>
-      <!-- конец общего родителя -->
-      <!-- зачем список тут? можно обойтись Divaми -->
-      <ul class="footer-copyright">
-        <li>© 2010–2017 Компания «Техномарт»<br>
-          Все права защищены</li>
-        <li>Обратная связь:
+        <ul class="footer-offers">
+          <li><a href="materials.html">Материалы</a></li>
+          <li><a href="equipment.html">Техника</a></li>
+          <li><a href="tools.html">Инструмент</a></li>
+          <li><a href="special-offers.html">Спецпредложения</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright-social">
+        <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
+        Все права защищены</p>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <p class="footer-copyright">Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-        <li>Разработано —
+        </p>
+        <p class="footer-copyright">Разработано —
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </li>
-      </ul>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
