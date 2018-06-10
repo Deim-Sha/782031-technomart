@@ -6,12 +6,14 @@
   </head>
   <body>
     <header class="main-header">
+      <!-- тут логотип в ссылке должен быть -->
       <ul class="shopping-navigation">
         <li>Поиск:</li> <!-- ToDo: Добавить форму -->
         <li><a href="bookmarks.html">Закладки:<span>0</span></a></li>
         <li><a href="cart.html">Корзина:<span>0</span></a></li>
         <li><a href="order.html">Оформить заказ</a></li>
       </ul>
+      <!-- начало общего какого-то блока -->
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <a href="tel-to.html">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -19,7 +21,9 @@
         <li><a href="login.html">Войти</a></li>
         <li><a href="registration.html">Регистрация</a></li>
       </ul>
+      <!-- конец общего родителя -->
       <nav class="main-navigation">
+        <!-- почему логотип тут? он же по макету вверху самому http://skrinshoter.ru/s/100618/YfSAAHwX -->
         <a class="main-header-logo">Техномарт</a>
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -36,6 +40,7 @@
     <main class="container">
       <section class="offers">
         <h2 class="visually-hidden">Предложения магазина</h2>
+        <!-- первый блок список из 3ех элементов -->
         <ul class="offers-list">
           <li class="offers-item">
             <h3>Материалы</h3>
@@ -49,50 +54,61 @@
             <h3>Техника</h3>
             <a class="button offer-button" href="equipment.html">Для стройки</a>
           </li>
-          <li class="offers-item">
-            <h3>Скидки 50%</h3>
-            <a class="button offer-button" href="special-offers.html">На 350 товаров</a>
-          </li>
-          <li class="offers-item">
-            <h3>Доставка</h3>
-            <a class="button offer-button" href="delivery.html">Бесплатно</a>
-          </li>
-          <li class="offers-item">
-            <ul class="offers-slider">
-              <li class="offers-slider-item">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="button" href="catalog.html">Открыть каталог</a>
-                <p>
-                  <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                  <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
-                </p>
-              </li>
-              <li class="offers-slider-item">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button" href="catalog.html">Открыть каталог</a>
-                <p>
-                  <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                  <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
-                </p>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        </ul>  
+        <!-- конец блока из 3ех элемнтов -->
+        <!-- второй блок, тут должен лежать слайдер и отдельно еще один контейнер, где будет скидки и доставка -->  
+          <section.offers2>
+            div.slider
+              <ul class="offers-slider">
+                <li class="offers-slider-item">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
+                  <p>
+                    <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
+                    <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+                  </p>
+                </li>
+                <li class="offers-slider-item">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
+                  <p>
+                    <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
+                    <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+                  </p>
+                </li>
+              </ul>
+            </div.slider2>
+          </section.offer2>
+          ul.offers-list2
+             <li class="offers-item">
+              <h3>Скидки 50%</h3>
+              <a class="button offer-button" href="special-offers.html">На 350 товаров</a>
+            </li>
+            <li class="offers-item">
+              <h3>Доставка</h3>
+              <a class="button offer-button" href="delivery.html">Бесплатно</a>
+            </li>
+          </ul> 
       </section>
 
       <section class="popular-goods">
+        <!-- Общий родитель -->
         <h2>Популярные товары:</h2>
         <a class="button" href="popular-goods.html">Все популярные товары</a>
+        <!-- конец общего родителя -->
+        
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <h3>Перфоратор BOSCH<br>
             BFG 9000</h3>
+            <!-- давай для Img обвертку типа div.image-wrapper-->
             <img src="http://placehold.it/184x164" alt="Перфоратор BOSCH BFG 9000">
             <p class="price-old">32500 Р.</p>
             <p class="price-new">25500 Р.</p>
             <ul class="add-item-to">
+              <!-- купить и закладки - ссылки -->
               <li class="button add-to-cart">Купить</li>
               <li class="button add-to-bookmarks">В закладки</li>
             </ul>
@@ -133,8 +149,10 @@
       </section>
 
       <section class="popular-companies">
+        <!-- Общий родитель -->
         <h2>Популярные производители:</h2>
         <a class="button" href="companies.html">Все производители</a>
+        <!-- конец общего родителя -->
         <ul class="popular-companies-list">
           <li class="popular-companies-item">
             <a href="companies.html#bosch">
@@ -202,8 +220,9 @@
           </li>
         </ul>
       </section>
-
-      <article class="info">
+      
+      <!-- info И contacts Должны иметь общий контейнер -->
+      <article class="info"> <!-- Не article -->
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -252,6 +271,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+      <!-- Общий родитель -->
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
       <ul class="footer-offers">
@@ -260,6 +280,8 @@
         <li><a href="tools.html">Инструмент</a></li>
         <li><a href="special-offers.html">Спецпредложения</a></li>
       </ul>
+      <!-- конец общего родителя -->
+      <!-- зачем список тут? можно обойтись Divaми -->
       <ul class="footer-copyright">
         <li>© 2010–2017 Компания «Техномарт»<br>
           Все права защищены</li>
