@@ -8,7 +8,13 @@
     <header class="main-header">
       <a class="main-header-logo">Техномарт</a>
       <ul class="shopping-navigation">
-        <li>Поиск:</li> <!-- ToDo: Добавить форму -->
+        <li>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              Поиск: <input type="search" name="search">
+            </label>
+          </form>
+        </li>
         <li><a href="bookmarks.html">Закладки:<span>0</span></a></li>
         <li><a href="cart.html">Корзина:<span>0</span></a></li>
         <li><a href="order.html">Оформить заказ</a></li>
@@ -59,8 +65,8 @@
               <p>Соседям на радость!</p>
               <a class="button" href="catalog.html">Открыть каталог</a>
               <p>
-                <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+                <button class="slider-button-next" type="button">Назад</button>
+                <button class="slider-button-next" type="button">Вперед</button>
               </p>
             </li>
             <li class="offers-slider-item">
@@ -68,8 +74,8 @@
               <p>Настоящие мужские игрушки</p>
               <a class="button" href="catalog.html">Открыть каталог</a>
               <p>
-                <span class="slider-button-next">Назад</span> <!-- ToDo: Сделать кнопку -->
-                <span class="slider-button-next">Вперед</span> <!-- ToDo: Сделать кнопку -->
+                <button class="slider-button-next" type="button">Назад</button>
+                <button class="slider-button-next" type="button">Вперед</button>
               </p>
             </li>
           </ul>
@@ -201,17 +207,17 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="services-slider">
           <li class="services-slider-item">
-            <span class="services-slider-button">Доставка</span> <!-- ToDo: Сделать кнопку -->
+            <button class="services-slider-button" type="button">Доставка</button>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </li>
           <li class="services-slider-item">
-            <span class="services-slider-button">Гарантия</span> <!-- ToDo: Сделать кнопку -->
+            <button class="services-slider-button" type="button">Гарантия</button>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
           </li>
           <li class="services-slider-item">
-            <span class="services-slider-button">Кредит</span> <!-- ToDo: Сделать кнопку -->
+            <button class="services-slider-button" type="button">Кредит</button>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             <a class="button" href="credit.html">Отправить заявку</a>
@@ -239,20 +245,37 @@
             <img src="img/map-small.jpg" width="300" height="158" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <p>
-            <span class="button">Заблудились? Напишите нам!</span><!-- ToDo: Сделать кнопку -->
+            <button class="button" type="button">Заблудились? Напишите нам!</button>
           </p>
         </section>
       </div>
 
       <section class="modal modal-write-us">
         <h2 class="visually-hidden">Обратная связь</h2>
-         <!-- ToDo: Добавить форму -->
-        <span class="modal-close">x</span> <!-- ToDo: Сделать кнопку -->
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="write-us-item">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="write-us-item">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+          </p>
+          <p class="write-us-item">
+            <label for="comment">Текст письма:</label>
+            <textarea name="comment" id="comment" rows="11" cols="46" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
 
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <span class="modal-close">x</span><!-- ToDo: Сделать кнопку -->
+        <p>
+          <img src="img/map.jpg" width="940" height="446" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
 

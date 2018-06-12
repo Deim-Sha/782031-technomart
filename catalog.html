@@ -8,9 +8,15 @@
     <header class="main-header">
       <a class="main-header-logo" href="index.html">Техномарт</a>
       <ul class="shopping-navigation">
-        <li>Поиск:</li> <!-- ToDo: Добавить форму -->
+        <li>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              Поиск: <input type="search" name="search">
+            </label>
+          </form>
+        </li>
         <li><a href="bookmarks.html">Закладки:<span>0</span></a></li>
-        <li><a href="cart.html">Корзина:<span>0</span></a></li>
+        <li class="cart-full"><a href="cart.html">Корзина:<span>10</span></a></li>
         <li><a href="order.html">Оформить заказ</a></li>
       </ul>
 
@@ -51,7 +57,76 @@
 
       <section class="filters">
         <h3>Фильтр:</h3>
-        <!-- ToDo: Добавить форму -->
+        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="price-range">
+              <div class="price-scale">
+                <div class="price-bar"></div>
+              </div>
+              <div class="price-toggle min-toggle"></div>
+              <div class="price-toggle max-toggle"></div>
+            </div>
+            <div class="price-filter">
+              <input class="min-price" type="text" name="min-price" value="0">
+              -
+              <input class="max-price" type="text" name="max-price" value="30000">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="bosch" checked>
+                  Bosch
+                </label>
+              </li>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="interskol">
+                  Интерскол
+                </label>
+              </li>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="makita" checked>
+                  Makita
+                </label>
+              </li>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="dewalt">
+                  DeWalt
+                </label>
+              </li>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="hitachi">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="product-group" value="battery" checked>
+                  Аккумуляторные
+                </label>
+              </li>
+              <li class="filters-option">
+                <label>
+                  <input class="visually-hidden filters-input filters-input-radio" type="radio" name="product-group" value="mains-supply">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button filters-button">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -196,7 +271,7 @@
           <a href="order.html">Оформить заказ</a>
           <a href="catalog.html">Продолжить покупки</a>
         </p>
-        <span class="modal-close">x</span>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
 
