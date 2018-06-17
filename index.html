@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">Техномарт</a>
-      <ul class="shopping-navigation">
-        <li>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Поиск: <input type="search" name="search">
-            </label>
-          </form>
-        </li>
-        <li><a href="bookmarks.html">Закладки:<span>0</span></a></li>
-        <li><a href="cart.html">Корзина:<span>0</span></a></li>
-        <li><a href="order.html">Оформить заказ</a></li>
-      </ul>
-      <div class="header-contacts-login">
+      <div class="header-top">
+        <a class="main-header-logo">Техномарт</a>
+        <ul class="shopping-navigation">
+          <li>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" value="Поиск:">
+            </form>
+          </li>
+          <li><a href="bookmarks.html">Закладки: <span>0</span></a></li>
+          <li><a href="cart.html">Корзина: <span>0</span></a></li>
+          <li class="order"><a href="order.html">Оформить заказ</a></li>
+        </ul>
+      </div>
+
+      <div class="header-middle">
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <a href="tel-to.html">+7 (812) 555-05-55</a>
+        <a class="phone" href="tel-to.html">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul class="user-navigation-unauthorized">
           <li><a href="login.html">Войти</a></li>
           <li><a href="registration.html">Регистрация</a></li>
         </ul>
       </div>
+
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -107,8 +112,8 @@
             <p class="price-old">32500 Р.</p>
             <p class="price-new">25500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
-              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
+              <li class="add-to-cart"><a class="button" href="cart.html">Купить</a></li>
+              <li class="add-to-bookmarks"><a class="button" href="bookmarks">В закладки</a></li>
             </ul>
           </li>
           <li class="popular-goods-item">
@@ -120,8 +125,8 @@
             <p class="price-old">22500 Р.</p>
             <p class="price-new">15500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
-              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
+              <li class="add-to-cart"><a class="button" href="cart.html">Купить</a></li>
+              <li class="add-to-bookmarks"><a class="button" href="bookmarks">В закладки</a>
             </ul>
           </li>
           <li class="popular-goods-item">
@@ -133,8 +138,8 @@
             <p class="price-old">30500 Р.</p>
             <p class="price-new">25500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
-              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
+              <li class="add-to-cart"><a class="button" href="cart.html">Купить</a></li>
+              <li class="add-to-bookmarks"><a class="button" href="bookmarks">В закладки</a>
             </ul>
           </li>
           <li class="popular-goods-item">
@@ -145,8 +150,8 @@
             </div>
             <p class="price-new">12500 Р.</p>
             <ul class="add-item-to">
-              <li class="button add-to-cart"><a href="cart.html">Купить</a></li>
-              <li class="button add-to-bookmarks"><a href="bookmarks">В закладки</a></li>
+              <li class="add-to-cart"><a class="button" href="cart.html">Купить</a></li>
+              <li class="add-to-bookmarks"><a class="button" href="bookmarks">В закладки</a>
             </ul>
           </li>
         </ul>
@@ -206,18 +211,18 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="services-slider">
-          <li class="services-slider-item">
-            <button class="services-slider-button" type="button">Доставка</button>
+          <li class="services-item-current">
+            <button type="button">Доставка</button>
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </li>
-          <li class="services-slider-item">
-            <button class="services-slider-button" type="button">Гарантия</button>
+          <li class="services-item">
+            <button type="button">Гарантия</button>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
           </li>
-          <li class="services-slider-item">
-            <button class="services-slider-button" type="button">Кредит</button>
+          <li class="services-item">
+            <button type="button">Кредит</button>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             <a class="button" href="credit.html">Отправить заявку</a>
@@ -281,19 +286,17 @@
 
     <footer class="main-footer">
       <nav class="main-navigation">
-        <a class="main-header-logo">Техномарт</a>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
+        <a class="main-footer-logo">Техномарт</a>
+        <ul class="footer-site-navigation">
           <li><a href="info.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
-          <li><a href="special-offers.html">Спецпредложения</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
 
-      <div class="footer-contacts-offers">
+      <div class="footer-middle">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55</p>
         <ul class="footer-offers">
@@ -304,7 +307,7 @@
         </ul>
       </div>
 
-      <div class="footer-copyright-social">
+      <div class="footer-bottom">
         <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
         Все права защищены</p>
         <ul class="footer-social">
