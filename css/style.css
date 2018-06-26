@@ -19,6 +19,27 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*header begin*/
 .main-header {
   display: flex;
@@ -46,7 +67,6 @@ a {
 .main-header-logo {
   box-sizing: border-box;
   width: 220px;
-  height: 42px;
   padding-top: 10px;
 
   font-size: 24px;
@@ -322,7 +342,6 @@ input[type="search"]:focus {
 
 .offers-item {
   width: 300px;
-  height: 123px;
 }
 
 .offers-item h3 {
@@ -341,7 +360,6 @@ input[type="search"]:focus {
   position: relative;
 
   width: 620px;
-  height: 266px;
   margin: 0;
   padding: 0;
 }
@@ -352,7 +370,6 @@ input[type="search"]:focus {
 
 .offers-slider-item {
   width: 620px;
-  height: 266px;
 }
 
 .offers-slider-item h3 {
@@ -439,6 +456,10 @@ input[type="search"]:focus {
 .popular-companies-item {
   width: 220px;
   margin-bottom: 20px;
+}
+
+.popular-companies-item a {
+  display: block;
 }
 
 .popular-goods-header h2,
@@ -683,7 +704,6 @@ input[type="search"]:focus {
 
 .main-footer-logo {
   width: 220px;
-  height: 68px;
 
   font-size: 30px;
   line-height: 30px;
